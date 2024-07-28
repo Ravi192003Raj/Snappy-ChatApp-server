@@ -66,12 +66,11 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
+// Apply socket authenticator middleware
 io.use((socket, next) => {
-  cookieParser()(
-    socket.request,
-    socket.request.res,
-    async (err) => await socketAuthenticator(err, socket, next)
-  );
+  cookieParser()(socket.request, socket.request.res || {}, (err) => {
+    socketAuthenticator(err, socket, next);
+  });
 });
 
 io.on("connection", (socket) => {
@@ -141,8 +140,10 @@ io.on("connection", (socket) => {
   });
 });
 
+// Apply error handling middleware
 app.use(errorMiddleware);
 
+// Start the server
 server.listen(port, () => {
   console.log(`Server is running on port ${port} in ${envMode} Mode`);
 });
