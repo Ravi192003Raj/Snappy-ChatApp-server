@@ -8,7 +8,7 @@ Snappy is a real-time chat application built using the MERN stack (MongoDB, Expr
 
 
 **Chat :**
-![Snappy Preview](./public/Chat2.PNG)
+![Snappy Preview](https://github.com/Ravi192003Raj/Snappy-ChatApp-client/blob/main/public/Chat2.PNG)
 
 
 
