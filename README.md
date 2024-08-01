@@ -2,6 +2,16 @@
 
 Snappy is a real-time chat application built using the MERN stack (MongoDB, Express.js, React, Node.js) and Socket.io for instant messaging. It offers a seamless chat experience with support for sharing images, videos, and audios, creating and managing groups, and receiving live notifications. Snappy is designed to handle dynamic interactions efficiently, ensuring smooth communication across devices.
 
+## Preview
+**Home :**
+![Snappy Preview](./public/Home.PNG)
+
+
+**Chat :**
+![Snappy Preview](./public/Chat2.PNG)
+
+
+
 ## Backend Tech Stack
 - **MongoDB:** Database for storing the informations of users, messages, requests and chats.
 - **Cloudinary:** Cloud Storage for saving the avatars of the users and the attachments as well.
